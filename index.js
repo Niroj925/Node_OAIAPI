@@ -2,6 +2,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import router from './route/userRoute.js';
+import  generateResponse  from './oaiIntgration.js';
 
 const app=express();
 
@@ -14,8 +15,6 @@ app.listen(8080,()=>{
     console.log('server is running');
 })
 
-
-// import  generateResponse  from './oaiIntgration.js';
 
 // const userPrompt = 'what is nest.js ?';
 // generateResponse(userPrompt)

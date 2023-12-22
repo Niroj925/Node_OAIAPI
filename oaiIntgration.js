@@ -2,6 +2,7 @@ import axios from 'axios';
 import 'dotenv/config';
 
 const apiKey = process.env.OPEN_API_KEY;
+
 const openaiEndpoint = 'https://api.openai.com/v1/chat/completions';
 
 async function generateResponse(userPrompt) {
